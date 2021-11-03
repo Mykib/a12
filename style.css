@@ -296,7 +296,6 @@ body {
   margin: 0 0.3rem 0.3rem 0;
 }
 
-
 /* MOBILE VIEWPORT */
 @media screen and (max-width: 700px) {
   #image-assembly {
@@ -352,7 +351,7 @@ body {
   }
 
   #footer-text {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 
   #engine-shadow {
@@ -375,4 +374,34 @@ body {
   .screen-dim {
     display: none;
   }
+}
+
+.back-home-button {
+  background-color: #00000000;
+  cursor: pointer;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.back-home-button:hover {
+  background-color: #11c5c557;
+}
+
+#close-to-home {
+  font-size: 1.5rem;
+  background-color: #00000000;
+  cursor: pointer;
+  color: #ffffff;
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: -1rem;
+  margin-right: -1.5rem;
+  margin-bottom: -3rem;
+}
+
+#close-to-home a{
+  text-decoration: none;
 }
