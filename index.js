@@ -67,7 +67,7 @@ $(document).ready(function(e) {
 
   // Toggle disassembly video
   var videoOpen = false;
-  
+
   $("#video-cta").click(function() {
     videoOpen ? closeVideo() : openVideo();
   });
@@ -78,8 +78,8 @@ $(document).ready(function(e) {
 
   function openVideo() {
     videoOpen = true;
-    $("#disassembly-video").animate({ top: "10vh" }, 500);
-    $("#video-close-button").animate({ top: "10vh" }, 500);
+    $("#disassembly-video").animate({ top: "5vh" }, 500);
+    $("#video-close-button").animate({ top: "5vh" }, 500);
     $(".screen-dim").animate({ opacity: 1 }, 500);
     $("#video-cta").text("Collapse Video \u23F7");
     player.playVideo();

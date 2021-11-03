@@ -206,10 +206,11 @@ body {
 }
 
 #video-close-button {
+  font-size: 1em;
   z-index: 6;
   border-style: solid;
   border-width: 1px;
-  padding: 0rem 0.55rem 0.3rem 0.55rem;
+  padding: 0.1em 0.45em 0.4em 0.45em;
   background: rgba(0, 0, 0, 0.5);
   right: 6vw;
   top: 200vh;
