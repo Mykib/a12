@@ -32,6 +32,18 @@ function onPlayerReady(event) {
 
 //============================== JQUERY CODE ===========================//
 $(document).ready(function(e) {
+  // LOAD CHECKER
+  var videoIsLoaded = false;
+  var allImagesLoaded = false;
+
+  var video = $("#dust-overlay")[0];
+  video.addEventListener("loadeddata", e => {
+    if (video.readyState >= 3) {
+      videoIsLoaded = true;
+      checkLoaded();
+    }
+  });
+
   var imgs = document.images,
     len = imgs.length,
     counter = 0;
@@ -44,10 +56,19 @@ $(document).ready(function(e) {
   function incrementCounter() {
     counter++;
     if (counter === len) {
-      $("#loading-page").fadeOut(500);
-      var video = $("#dust-overlay").get(0);
-      if (video.paused) $("#dust-overlay").hide();
+      allImagesLoaded = true;
+      checkLoaded();
     }
+  }
+
+  function checkLoaded() {
+    videoIsLoaded && allImagesLoaded
+      ? $("#loading-page").fadeOut(400)
+      : allImagesLoaded
+        ? null
+        : setTimeout(function() {
+            videoIsLoaded ? $("#loading-page").fadeOut(400) : $("#dust-overlay").hide();
+          }, 6000);
   }
 
   // Handle Clicks on engine-component
