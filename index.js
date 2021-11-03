@@ -28,6 +28,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
   event.target.seekTo(45);
+  event.target.pauseVideo();
 }
 
 //============================== JQUERY CODE ===========================//
@@ -67,7 +68,9 @@ $(document).ready(function(e) {
       : allImagesLoaded
         ? null
         : setTimeout(function() {
-            videoIsLoaded ? $("#loading-page").fadeOut(400) : $("#dust-overlay").hide();
+            videoIsLoaded
+              ? $("#loading-page").fadeOut(400)
+              : $("#dust-overlay").hide();
           }, 6000);
   }
 

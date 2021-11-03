@@ -381,8 +381,13 @@ body {
   cursor: pointer;
   color: #ffffff;
   border: solid 1px #ffffff;
-  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 1rem;
+}
+
+.back-home-button a{
+  text-decoration: none;
+  padding: 0.5em 1em 0.5em 1em;
+  line-height: 1.5rem;
 }
 
 .back-home-button:hover {
