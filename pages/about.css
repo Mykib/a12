@@ -1,8 +1,44 @@
 #a12-background {
-    position: absolute;
-    bottom: 0;
-    z-index: -2;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  position: fixed;
+  bottom: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#about-section {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  width: 50vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #ffffff;
+}
+
+/* MOBILE VIEWPORT */
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #about-section {
+    margin-top: 3rem;
+    width: 90vw;
+    margin-left: 2.5vw;
+    padding: 2.5vw;
+  }
 }

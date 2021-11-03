@@ -1,8 +1,42 @@
 #dat12-background {
-    position: absolute;
-    bottom: 0;
-    z-index: -2;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#assignment-info-section {
+  width: 60vw;
+  margin-top: 1rem;
+  margin-left: 17vw;
+  padding: 1.5rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+a {
+  color: #ffffff;
+}
+
+/* MOBILE VIEWPORT */
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #assignment-info {
+    margin-top: 3rem;
+    width: 90vw;
+    margin-left: 2.5vw;
+    padding: 2.5vw;
+  }
 }
