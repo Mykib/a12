@@ -1,0 +1,138 @@
+/* STYLES RELATING TO THE INTERACTIVE ENGINE ILLUSTRATION */
+.engine-component {
+  position: absolute;
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+.engine-component:hover {
+  filter: brightness(1) ;
+}
+
+.selected {
+  filter: brightness(1.2) drop-shadow(0px 0px 12px #11c5c5);
+}
+
+.selected:hover {
+  filter: brightness(1.2) drop-shadow(0px 0px 12px #11c5c5);
+}
+
+#engine-shadow {
+  position: absolute;
+  width: 25rem;
+  height: 7rem;
+  bottom: 1.5rem;
+  margin-left: -1.5rem;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #000000 0%,
+    #262626 47.4%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* INDIVIDUAL ENGINE COMPONENTS FROM HERE */
+#block-img {
+  z-index: 4;
+  margin-left: 11.3em;
+  margin-top: 13.5em;
+}
+
+#coolant-inlet-img {
+  z-index: 8;
+  margin-left: 25em;
+  margin-top: 16.5em;
+}
+
+#coolant-outlet-img {
+  z-index: 17;
+  margin-left: 13.5em;
+  margin-top: 5.9em;
+}
+
+#crankshaft-pulley-img {
+  z-index: 14;
+  margin-left: 12.5em;
+  margin-top: 23em;
+}
+
+#cylinder-head-img {
+  z-index: 15;
+  margin-left: 12.5em;
+  margin-top: 7.4em;
+}
+
+#dip-stick-img {
+  z-index: 7;
+  margin-left: 6em;
+  margin-top: 5em;
+  transform: rotate(-35deg);
+}
+
+#distributor-img {
+  z-index: 3;
+  margin-left: 7em;
+  margin-top: 10em;
+}
+
+#extractors-img {
+  z-index: 3;
+  margin-left: 22.5em;
+  margin-top: 7.5em;
+}
+
+#fan-pulley-img {
+  z-index: 12;
+  margin-left: 19em;
+  margin-top: 16em;
+}
+
+#fuel-pump-img {
+  z-index: 5;
+  margin-left: 3em;
+  margin-top: 15.5em;
+}
+
+#oil-filter-img {
+  z-index: 10;
+  margin-left: 3em;
+  margin-top: 28.3em;
+}
+
+#oil-pan-img {
+  z-index: 2;
+  margin-left: 9.4em;
+  margin-top: 28.8em;
+}
+
+#oil-pressure-switch-img {
+  z-index: 11;
+  margin-left: 0;
+  margin-top: 25em;
+}
+
+#oil-pump-img {
+  z-index: 12;
+  margin-left: 3.4em;
+  margin-top: 24em;
+}
+
+#rocker-cover-img {
+  z-index: 16;
+  margin-left: 13em;
+  margin-top: 0.1em;
+}
+
+#timing-cover-img {
+  z-index: 13;
+  margin-left: 8em;
+  margin-top: 14.7em;
+  transform: rotate(-44deg);
+}
+
+#water-pump-img {
+  z-index: 9;
+  margin-left: 11.3em;
+  margin-top: 15.3em;
+}

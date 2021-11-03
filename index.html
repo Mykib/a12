@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- IMPORTS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="engine-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script id="infoData" src="assets/a12/info.json"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/a12/rocker-cover.png" />
+    <title>Nissan A12 Motor</title>
+  </head>
+
+  <body>
+    <section id="content">
+      <!-- NAVIGATION BAR -->
+      <nav id="navigation-bar">
+        <h2 id="nav-heading">Nissan A12 Motor</h2>
+        <div id="nav-left">45888426</div>
+        <div id="nav-right">
+          <a href="">Videos</a>
+          <a href="">About</a>
+        </div>
+      </nav>
+
+      <!-- INTERACTIVE ENGINE ILLUSTRATION -->
+      <section id="image-assembly">
+        <img
+          class="engine-component"
+          id="block-img"
+          src="./assets/a12/block.png"
+          alt="Cast Iron Block"
+        />
+        <img
+          class="engine-component"
+          id="coolant-inlet-img"
+          src="./assets/a12/coolant-inlet.png"
+          alt="Coolant Inlet"
+        />
+        <img
+          class="engine-component"
+          id="coolant-outlet-img"
+          src="./assets/a12/coolant-outlet.png"
+          alt="Coolant Outlet"
+        />
+        <img
+          class="engine-component"
+          id="crankshaft-pulley-img"
+          src="./assets/a12/crankshaft-pulley.png"
+          alt="Crankshaft Pulley"
+        />
+        <img
+          class="engine-component"
+          id="cylinder-head-img"
+          src="./assets/a12/cylinder-head.png"
+          alt="Cylinder Head"
+        />
+        <img
+          class="engine-component"
+          id="dip-stick-img"
+          src="./assets/a12/dip-stick.png"
+          alt="Dip Stick"
+        />
+        <img
+          class="engine-component"
+          id="distributor-img"
+          src="./assets/a12/distributor.png"
+          alt="Distributor"
+        />
+        <img
+          class="engine-component"
+          id="extractors-img"
+          src="./assets/a12/extractors.png"
+          alt="Extractors"
+        />
+        <img
+          class="engine-component"
+          id="fan-pulley-img"
+          src="./assets/a12/fan-pulley.png"
+          alt="Fan Pulley"
+        />
+        <img
+          class="engine-component"
+          id="fuel-pump-img"
+          src="./assets/a12/fuel-pump.png"
+          alt="Fuel Pump"
+        />
+        <img
+          class="engine-component"
+          id="oil-filter-img"
+          src="./assets/a12/oil-filter.png"
+          alt="Oil Filter"
+        />
+        <img
+          class="engine-component"
+          id="oil-pan-img"
+          src="./assets/a12/oil-pan.png"
+          alt="Oil Pan"
+        />
+        <img
+          class="engine-component"
+          id="oil-pressure-switch-img"
+          src="./assets/a12/oil-pressure-switch.png"
+          alt="Oil Pressure Switch"
+        />
+        <img
+          class="engine-component"
+          id="oil-pump-img"
+          src="./assets/a12/oil-pump.png"
+          alt="Oil Pump"
+        />
+        <img
+          class="engine-component"
+          id="rocker-cover-img"
+          src="./assets/a12/rocker-cover.png"
+          alt="Rocker Cover"
+        />
+        <img
+          class="engine-component"
+          id="timing-cover-img"
+          src="./assets/a12/timing-cover.png"
+          alt="Timing Cover"
+        />
+        <img
+          class="engine-component"
+          id="water-pump-img"
+          src="./assets/a12/water-pump.png"
+          alt="Water Pump"
+        />
+      </section>
+      <div id="engine-shadow"></div>
+
+      <!-- INTERACT CTA -->
+      <div class="interact-cta">
+        Click on the different engine <br />
+        components to learn more!
+        <img src="./assets/touch_app_white_48dp.svg" alt="Pointer Icon" />
+      </div>
+
+      <!-- BACKGROUND IMAGE -->
+      <img
+        id="japan-background"
+        src="assets/pexels-olya-kobruseva-4679116.jpg"
+        alt="japan-background"
+      />
+
+      <!-- PARTICLE EFFECT VIDEO OVERLAY -->
+      <video id="dust-overlay" autoplay loop>
+        <source src="./assets/pexels-cottonbro-9665235.mp4" type=video/mp4>
+      </video>
+
+      <!-- INFORMATION CONTENT WINDOW -->
+      <section class="information-content closed">
+        <button id="information-content-close-button" class="close-button">
+          X
+        </button>
+        <h1></h1>
+        <section></section>
+      </section>
+    </section>
+
+    <!-- VIDEO CTA -->
+    <button id="video-cta">Watch a video! ></button>
+    <iframe
+      id="disassembly-video"
+      src="https://www.youtube.com/embed/I-ZNBaZbNF4?enablejsapi=1&start=45"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      enablejsapi
+      allowfullscreen
+    ></iframe>
+    <div class="screen-dim"></div>
+    <button id="video-close-button" class="close-button close-button-visible">
+      X
+    </button>
+
+    <!-- FOOTER -->
+    <p id="footer-text">Design and Code by Michael Brimo 2021</p>
+  </body>
+</html>

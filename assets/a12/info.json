@@ -1,0 +1,87 @@
+[
+  {
+    "id": "block-img",
+    "name": "Engine Block",
+    "info": "The cast iron block serves as the heart of the motor and houses many internal components like the pistons, cylinders, crankshaft with gears to drive various peripherals. Combustion happens in this section of the motor assembly, with the forces being converted into circular motion to drive the wheels of a car."
+  },
+  {
+    "id": "coolant-inlet-img",
+    "name": "Coolant Inlet",
+    "info": "This pipe is pressed into the cast iron block and is the entry point for fresh coolant to enter the block. Coolant then passes through what is known as the coolant jacket - system of cavities and routes to efficiently water cool the internal components of the motor."
+  },
+  {
+    "id": "coolant-outlet-img",
+    "name": "Coolant Outlet",
+    "info": "The exit point for hot coolant from the motor. From here the coolant is plumbed to a radiator which acts like a large heatsink to the ambient air with a fan that actively cools the radiator. The cooled water is then plumbed back into the coolant inlet - completing a full loop."
+  },
+  {
+    "id": "crankshaft-pulley-img",
+    "name": "Crankshaft Pulley",
+    "info": "This pulley is connected to the head of the crankshaft; driven by the rotation caused by the pistons. The pulley then utilises a belt to run secondary pulleys to power various accessories like the alternator, water pump and air-conditioning compressor. The A12 utilises a v-style rubber belt and only turns the water pump and alternator; generating current to charge the car's battery. Some folk are lucky enough to have landed a model with air-conditioning - in which case an extra grove on the crankshaft pulley is present."
+  },
+  {
+    "id": "cylinder-head-img",
+    "name": "Cylinder Head",
+    "info": "The cylinder head makes a perfect seal with the cast iron block below and serves as the entry point for everything the cylinders need for combustion. Spark, fuel and air are carefully timed during the pistons vertical stroke to efficiently produce power to turn the crankshaft. Various valves open and close depending on the position of the pistons. These valves control air vacuum to allow fresh air and atomised fuel to enter and exhaust gasses to exit. The A12 uses push rods which are lifted by machined lobes on the camshaft."
+  },
+  {
+    "id": "dip-stick-img",
+    "name": "Dipstick",
+    "info": "The dipstick is what allows you to tell the level of engine oil in the motor. A metal rod is routed through the block and into the oil pan. Markings on the end of the dipstick indicate the recommended level. "
+  },
+  {
+    "id": "distributor-img",
+    "name": "Distributor",
+    "info": "The distributor receives high voltage from an ignition coil and determines which cylinder to send a spark to. A shaft from the distributor is connected down into the cast iron block, into gears driven by the camshaft. This circular motion acts like a 4-way switch; sending a spark into the correct cylinder for combustion. "
+  },
+  {
+    "id": "extractors-img",
+    "name": "Exhaust Manifold",
+    "info": "Directly connected to the exhaust ports on the cylinder head. A manifold that routes exhaust gasses from the motor, out the back of the car. These gases usually pass through a catalytic converter to burn excess gases then a muffler to dampen the sound of combustion from the motor. In some vehicles the flow of these gases are used to turn an impeller to force more air into the motor for a more concentrated air fuel mixture for more power."
+  },
+  {
+    "id": "fan-pulley-img",
+    "name": "Fan Pulley",
+    "info": "This pulley is driven by the water pump and drives a fan that blows air through the radiator to cool down coolant. In modern cars this is usually replaced by an electric fan."
+  },
+  {
+    "id": "fuel-pump-img",
+    "name": "Fuel Pump",
+    "info": "Driven by the camshaft of the engine block, this fuel pump creates a vacuum which sucks fuel from the back of the car and into the carburetor to be atomised. Modern vehicles use an electric fuel pump to deliver petrol to the motor."
+  },
+  {
+    "id": "oil-filter-img",
+    "name": "Oil FIlter",
+    "info": "Oil is pumped through this cartridge which consists of folds of paper. This paper membrane filters out impurities in the oil, as well as any contaminants like metal shavings that are created as a byproduct of general wear and tear of an engine."
+  },
+  {
+    "id": "oil-pan-img",
+    "name": "Oil Pan",
+    "info": "The oil pan serves as the collection point in the oil cycle through the motor, as well as the reservoir. An oil pickup tube is submerged into the oil - serving the oil throughout the motor. Oil pans usually feature solid flaps of sheet metal to serve as a baffle to prevent oil sloshing around in the oil pan. Without baffles oil can collect to one side on hard cornering, and starve the motor of oil."
+  },
+  {
+    "id": "oil-pressure-switch-img",
+    "name": "Oil Pressure Switch",
+    "info": "If oil isn’t being pumped through the system - this sensor will electrically ground itself through the motor block allowing a check oil light to show on the dashboard in the cabin."
+  },
+  {
+    "id": "oil-pump-img",
+    "name": "Oil Pump",
+    "info": "Another component driven by the internal mechanics of the block. The oil pump generates oil pressure to suck oil through the oil pickup and through the oil filter. If an aftermarket oil air cooler is installed an adapter is sandwiched here to reroute oil through an oil cooler."
+  },
+  {
+    "id": "rocker-cover-img",
+    "name": "Rocker Cover",
+    "info": "The rocker cover is the lid of the engine. Removal allows access to the top of the cylinder head to perform specific maintenance on the various components."
+  },
+  {
+    "id": "timing-cover-img",
+    "name": "Timing Cover",
+    "info": "The timing cover is a removable plate between the block and the crankshaft pulley. Removal allows access to the timing chain which translates rotation from the crankshaft to the camshaft. It is important for the two pulleys of each shaft to be in time - to drive various peripherals like the distributor and valve lifters."
+  },
+  {
+    "id": "water-pump-img",
+    "name": "Water Pump",
+    "info": "The water pump consists of an impeller that is driven by a pulley shared with the radiator fan. The impeller is always turning when the motor is running, but coolant may only flow if it has reached operating temperature - allowing a heat activated thermostat to open."
+  }
+]
