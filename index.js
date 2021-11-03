@@ -32,6 +32,9 @@ function onPlayerReady(event) {
 
 //============================== JQUERY CODE ===========================//
 $(document).ready(function(e) {
+  setTimeout(() => {
+    $("#loading-page").fadeOut(500);
+  }, 2000);
   // Handle Clicks on engine-component
   // Set text content of .information-content and animate height change
   $(".engine-component").click(function(e) {

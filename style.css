@@ -6,6 +6,68 @@ body {
   font-family: "Zen Kaku Gothic Antique", Arial, Helvetica, sans-serif;
 }
 
+/* LOADING SCREEN */
+#loading-page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background: #11c6c6;
+  background: -webkit-linear-gradient(top left, #11c6c6, #191919);
+  background: -moz-linear-gradient(top left, #11c6c6, #191919);
+  background: linear-gradient(to bottom right, #11c6c6, #191919);
+  z-index: 999999999999999999;
+}
+
+#spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #11c5c5;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner-heading {
+  width: 100%;
+  text-align: center;
+  padding-top: 3rem;
+  color: #ffffff;
+}
+
+#spinner-text {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
 /* NAVIGATION BAR */
 #navigation-bar {
   display: flex;
