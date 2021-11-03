@@ -83,7 +83,7 @@ $(document).ready(function(e) {
     videoOpen = true;
     $("#disassembly-video").animate({ top: "5vh" }, 500);
     $("#video-close-button").animate({ top: "5vh" }, 500);
-    $(".screen-dim").animate({ opacity: 1 }, 500);
+    $(".screen-dim").fadeIn(500)
     $("#video-cta").text("Collapse Video \u23F7");
     player.playVideo();
   }
@@ -92,7 +92,7 @@ $(document).ready(function(e) {
     videoOpen = false;
     $("#disassembly-video").animate({ top: "200vh" }, 500);
     $("#video-close-button").animate({ top: "200vh" }, 500);
-    $(".screen-dim").animate({ opacity: 0 }, 500);
+    $(".screen-dim").fadeOut(500);
     $("#video-cta").text("Watch a video! \u23F6");
     player.pauseVideo();
   }
