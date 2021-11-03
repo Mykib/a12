@@ -34,11 +34,25 @@ function onPlayerReady(event) {
 $(document).ready(function(e) {
   //Close Loading Screen
   setTimeout(() => {
-    $("#loading-page").fadeOut(500);
     var video = $("#dust-overlay").get(0);
-    if (video.paused) video.hide()
+    if (video.paused) $("#dust-overlay").hide();
   }, 2000);
 
+  var imgs = document.images,
+    len = imgs.length,
+    counter = 0;
+
+  [].forEach.call(imgs, function(img) {
+    if (img.complete) incrementCounter();
+    else img.addEventListener("load", incrementCounter, false);
+  });
+
+  function incrementCounter() {
+    counter++;
+    if (counter === len) {
+      $("#loading-page").fadeOut(500);
+    }
+  }
 
   // Handle Clicks on engine-component
   // Set text content of .information-content and animate height change
@@ -88,7 +102,7 @@ $(document).ready(function(e) {
     videoOpen = true;
     $("#disassembly-video").animate({ top: "5vh" }, 500);
     $("#video-close-button").animate({ top: "5vh" }, 500);
-    $(".screen-dim").fadeIn(500)
+    $(".screen-dim").fadeIn(500);
     $("#video-cta").text("Collapse Video ^");
     player.playVideo();
   }
