@@ -1,8 +1,34 @@
 var infoData;
 var informationAnimationSpeed = 200;
+
 fetch("./assets/a12/info.json").then(res => res.json()).then(data => {
   infoData = data;
 });
+
+// INITIATE EMBEDDED YOUTUBE VIDEO
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("disassembly-video", {
+    height: "390",
+    width: "640",
+    videoId: "I-ZNBaZbNF4",
+    playerVars: {
+      playsinline: 1
+    },
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.seekTo(45);
+}
 
 //============================== JQUERY CODE ===========================//
 $(document).ready(function(e) {
@@ -41,7 +67,7 @@ $(document).ready(function(e) {
 
   // Toggle disassembly video
   var videoOpen = false;
-
+  
   $("#video-cta").click(function() {
     videoOpen ? closeVideo() : openVideo();
   });
@@ -56,6 +82,7 @@ $(document).ready(function(e) {
     $("#video-close-button").animate({ top: "10vh" }, 500);
     $(".screen-dim").animate({ opacity: 1 }, 500);
     $("#video-cta").text("Collapse Video \u23F7");
+    player.playVideo();
   }
 
   function closeVideo() {
@@ -64,5 +91,6 @@ $(document).ready(function(e) {
     $("#video-close-button").animate({ top: "200vh" }, 500);
     $(".screen-dim").animate({ opacity: 0 }, 500);
     $("#video-cta").text("Watch a video! \u23F6");
+    player.pauseVideo();
   }
 });
