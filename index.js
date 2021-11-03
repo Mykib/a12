@@ -32,12 +32,6 @@ function onPlayerReady(event) {
 
 //============================== JQUERY CODE ===========================//
 $(document).ready(function(e) {
-  //Close Loading Screen
-  setTimeout(() => {
-    var video = $("#dust-overlay").get(0);
-    if (video.paused) $("#dust-overlay").hide();
-  }, 2000);
-
   var imgs = document.images,
     len = imgs.length,
     counter = 0;
@@ -51,6 +45,8 @@ $(document).ready(function(e) {
     counter++;
     if (counter === len) {
       $("#loading-page").fadeOut(500);
+      var video = $("#dust-overlay").get(0);
+      if (video.paused) $("#dust-overlay").hide();
     }
   }
 
