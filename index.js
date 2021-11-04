@@ -74,6 +74,16 @@ $(document).ready(function(e) {
           }, 6000);
   }
 
+  // Fallback - 8 second max loading
+  // TODO: addEventListener("loadeddata") doesn't seem to fire in firefox, safari and ios
+  navigator.userAgent.search("Firefox") >= 0 ||
+  navigator.userAgent.search("Safari") >= 0
+    ? $("#loading-page").fadeOut(400)
+    : setTimeout(function() {
+        $("#loading-page").fadeOut(400);
+        console.log(`Video ${video.src} events not detected.`);
+      }, 8000);
+
   // Handle Clicks on engine-component
   // Set text content of .information-content and animate height change
   $(".engine-component").click(function(e) {
