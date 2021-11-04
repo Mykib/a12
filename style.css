@@ -304,8 +304,25 @@ body {
     bottom: auto;
   }
 
+  #navigation-bar {
+    padding: 0.5rem;
+  }
+
+  #nav-left {
+    padding-left: 0.5rem;
+  }
+
+  #nav-right {
+    padding-right: 0.5rem;
+  }
+
   #nav-heading {
     margin-top: 1.5rem;
+  }
+
+  #nav-left,
+  #nav-right a {
+    padding-left: 0.5rem;
   }
 
   .interact-cta {
@@ -376,6 +393,7 @@ body {
   }
 }
 
+/* ABOUT AND ASSIGNMENT INFO STYLES */
 .back-home-button {
   background-color: #00000000;
   cursor: pointer;
@@ -384,7 +402,7 @@ body {
   border-radius: 1rem;
 }
 
-.back-home-button a{
+.back-home-button a {
   text-decoration: none;
   padding: 0.5em 1em 0.5em 1em;
   line-height: 1.5rem;
@@ -407,6 +425,6 @@ body {
   margin-bottom: -3rem;
 }
 
-#close-to-home a{
+#close-to-home a {
   text-decoration: none;
 }
